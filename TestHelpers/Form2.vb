@@ -12,10 +12,6 @@ Public Class Form2
         DataSet1.Register(Me, False)
     End Sub
 
-    Private Sub SpeichernToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SpeichernToolStripMenuItem.Click
-        DataSet1.Save(Me)
-    End Sub
-
     Private Sub SchliessenToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SchliessenToolStripMenuItem.Click
         Me.Close()
     End Sub

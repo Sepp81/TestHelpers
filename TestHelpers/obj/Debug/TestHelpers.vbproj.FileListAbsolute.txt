@@ -17,3 +17,14 @@ C:\Git\TestHelpers\TestHelpers\bin\Debug\TestHelpers.exe.config
 C:\Git\TestHelpers\TestHelpers\obj\Debug\TestHelpers.exe
 C:\Git\TestHelpers\TestHelpers\obj\Debug\TestHelpers.xml
 C:\Git\TestHelpers\TestHelpers\obj\Debug\TestHelpers.pdb
+C:\Git\TestHelpers\TestHelpers\bin\Debug\TestHelpers.exe
+C:\Git\TestHelpers\TestHelpers\bin\Debug\TestHelpers.pdb
+C:\Git\TestHelpers\TestHelpers\bin\Debug\TestHelpers.xml
+C:\Git\TestHelpers\TestHelpers\bin\Debug\HelpersSmallEd.dll
+C:\Git\TestHelpers\TestHelpers\bin\Debug\HelpersSmallEd.pdb
+C:\Git\TestHelpers\TestHelpers\bin\Debug\HelpersSmallEd.xml
+C:\Git\TestHelpers\TestHelpers\obj\Debug\TestHelpers.vbprojResolveAssemblyReference.cache
+C:\Git\TestHelpers\TestHelpers\obj\Debug\TestHelpers.Form1.resources
+C:\Git\TestHelpers\TestHelpers\obj\Debug\TestHelpers.Form2.resources
+C:\Git\TestHelpers\TestHelpers\obj\Debug\TestHelpers.Resources.resources
+C:\Git\TestHelpers\TestHelpers\obj\Debug\TestHelpers.vbproj.GenerateResource.Cache

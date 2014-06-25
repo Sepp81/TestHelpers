@@ -26,6 +26,6 @@ Public Class Form1
 
     Private Sub SpeichernToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SpeichernToolStripMenuItem.Click
         DataSet1.Save(Me)
-        MessageBox.Show("Daten gespeichert")
+        My.Computer.Audio.PlaySystemSound(System.Media.SystemSounds.Asterisk)
     End Sub
 End Class

@@ -32,7 +32,6 @@ Partial Class Form2
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.DateiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SchliessenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SpeichernToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.DataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataTable1BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataTable1DataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -93,7 +92,7 @@ Partial Class Form2
         '
         'DateiToolStripMenuItem
         '
-        Me.DateiToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SpeichernToolStripMenuItem, Me.SchliessenToolStripMenuItem})
+        Me.DateiToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SchliessenToolStripMenuItem})
         Me.DateiToolStripMenuItem.Name = "DateiToolStripMenuItem"
         Me.DateiToolStripMenuItem.Size = New System.Drawing.Size(46, 20)
         Me.DateiToolStripMenuItem.Text = "Datei"
@@ -103,12 +102,6 @@ Partial Class Form2
         Me.SchliessenToolStripMenuItem.Name = "SchliessenToolStripMenuItem"
         Me.SchliessenToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.SchliessenToolStripMenuItem.Text = "Schliessen"
-        '
-        'SpeichernToolStripMenuItem
-        '
-        Me.SpeichernToolStripMenuItem.Name = "SpeichernToolStripMenuItem"
-        Me.SpeichernToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.SpeichernToolStripMenuItem.Text = "Speichern"
         '
         'Form2
         '
@@ -138,5 +131,4 @@ Partial Class Form2
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
     Friend WithEvents DateiToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents SchliessenToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents SpeichernToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

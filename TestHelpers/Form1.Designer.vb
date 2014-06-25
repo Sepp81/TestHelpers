@@ -24,20 +24,20 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.DataTable1DataGridView = New System.Windows.Forms.DataGridView()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.DateiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Form2ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.BeendenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataTable1BindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.DataSet1 = New TestHelpers.DataSet1()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.DateiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SpeichernToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Form2ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BeendenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.DataTable1DataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MenuStrip1.SuspendLayout()
         CType(Me.DataTable1BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'DataTable1DataGridView
@@ -51,34 +51,6 @@ Partial Class Form1
         Me.DataTable1DataGridView.Name = "DataTable1DataGridView"
         Me.DataTable1DataGridView.Size = New System.Drawing.Size(1148, 537)
         Me.DataTable1DataGridView.TabIndex = 1
-        '
-        'MenuStrip1
-        '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DateiToolStripMenuItem})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1148, 24)
-        Me.MenuStrip1.TabIndex = 2
-        Me.MenuStrip1.Text = "MenuStrip1"
-        '
-        'DateiToolStripMenuItem
-        '
-        Me.DateiToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SpeichernToolStripMenuItem, Me.Form2ToolStripMenuItem, Me.BeendenToolStripMenuItem})
-        Me.DateiToolStripMenuItem.Name = "DateiToolStripMenuItem"
-        Me.DateiToolStripMenuItem.Size = New System.Drawing.Size(46, 20)
-        Me.DateiToolStripMenuItem.Text = "Datei"
-        '
-        'Form2ToolStripMenuItem
-        '
-        Me.Form2ToolStripMenuItem.Name = "Form2ToolStripMenuItem"
-        Me.Form2ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.Form2ToolStripMenuItem.Text = "Form2"
-        '
-        'BeendenToolStripMenuItem
-        '
-        Me.BeendenToolStripMenuItem.Name = "BeendenToolStripMenuItem"
-        Me.BeendenToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.BeendenToolStripMenuItem.Text = "Beenden"
         '
         'DataGridViewTextBoxColumn1
         '
@@ -111,11 +83,39 @@ Partial Class Form1
         Me.DataSet1.DataSetName = "DataSet1"
         Me.DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DateiToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(1148, 24)
+        Me.MenuStrip1.TabIndex = 2
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'DateiToolStripMenuItem
+        '
+        Me.DateiToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SpeichernToolStripMenuItem, Me.Form2ToolStripMenuItem, Me.BeendenToolStripMenuItem})
+        Me.DateiToolStripMenuItem.Name = "DateiToolStripMenuItem"
+        Me.DateiToolStripMenuItem.Size = New System.Drawing.Size(46, 20)
+        Me.DateiToolStripMenuItem.Text = "Datei"
+        '
         'SpeichernToolStripMenuItem
         '
         Me.SpeichernToolStripMenuItem.Name = "SpeichernToolStripMenuItem"
-        Me.SpeichernToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SpeichernToolStripMenuItem.Size = New System.Drawing.Size(126, 22)
         Me.SpeichernToolStripMenuItem.Text = "Speichern"
+        '
+        'Form2ToolStripMenuItem
+        '
+        Me.Form2ToolStripMenuItem.Name = "Form2ToolStripMenuItem"
+        Me.Form2ToolStripMenuItem.Size = New System.Drawing.Size(126, 22)
+        Me.Form2ToolStripMenuItem.Text = "Form2"
+        '
+        'BeendenToolStripMenuItem
+        '
+        Me.BeendenToolStripMenuItem.Name = "BeendenToolStripMenuItem"
+        Me.BeendenToolStripMenuItem.Size = New System.Drawing.Size(126, 22)
+        Me.BeendenToolStripMenuItem.Text = "Beenden"
         '
         'Form1
         '
@@ -128,10 +128,10 @@ Partial Class Form1
         Me.Name = "Form1"
         Me.Text = "Form1"
         CType(Me.DataTable1DataGridView, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.MenuStrip1.ResumeLayout(False)
-        Me.MenuStrip1.PerformLayout()
         CType(Me.DataTable1BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataSet1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
