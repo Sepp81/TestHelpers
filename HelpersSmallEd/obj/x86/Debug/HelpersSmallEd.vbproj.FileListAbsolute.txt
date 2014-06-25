@@ -1,0 +1,10 @@
+C:\Users\Stephan\Documents\Visual Studio 2013\Projects\DateSetBsp\HelpersSmallEd\bin\Debug\HelpersSmallEd.dll
+C:\Users\Stephan\Documents\Visual Studio 2013\Projects\DateSetBsp\HelpersSmallEd\bin\Debug\HelpersSmallEd.pdb
+C:\Users\Stephan\Documents\Visual Studio 2013\Projects\DateSetBsp\HelpersSmallEd\bin\Debug\HelpersSmallEd.xml
+C:\Users\Stephan\Documents\Visual Studio 2013\Projects\DateSetBsp\HelpersSmallEd\obj\x86\Debug\Resources.resources
+C:\Users\Stephan\Documents\Visual Studio 2013\Projects\DateSetBsp\HelpersSmallEd\obj\x86\Debug\System.Data.DataEditor.resources
+C:\Users\Stephan\Documents\Visual Studio 2013\Projects\DateSetBsp\HelpersSmallEd\obj\x86\Debug\dlgInputTemplate.resources
+C:\Users\Stephan\Documents\Visual Studio 2013\Projects\DateSetBsp\HelpersSmallEd\obj\x86\Debug\HelpersSmallEd.vbproj.GenerateResource.Cache
+C:\Users\Stephan\Documents\Visual Studio 2013\Projects\DateSetBsp\HelpersSmallEd\obj\x86\Debug\HelpersSmallEd.dll
+C:\Users\Stephan\Documents\Visual Studio 2013\Projects\DateSetBsp\HelpersSmallEd\obj\x86\Debug\HelpersSmallEd.xml
+C:\Users\Stephan\Documents\Visual Studio 2013\Projects\DateSetBsp\HelpersSmallEd\obj\x86\Debug\HelpersSmallEd.pdb

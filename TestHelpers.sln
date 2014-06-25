@@ -5,7 +5,7 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TestHelpers", "TestHelpers\TestHelpers.vbproj", "{2AA1E9D6-B578-4298-9016-57059FC06BD9}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "HelpersSmallEd", "C:\Users\q345356\Desktop\HelpersSmallEd\HelpersSmallEd.vbproj", "{195D7360-B436-4813-88BD-3435F406B681}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "HelpersSmallEd", "HelpersSmallEd\HelpersSmallEd.vbproj", "{195D7360-B436-4813-88BD-3435F406B681}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
