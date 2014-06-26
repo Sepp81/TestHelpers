@@ -13,6 +13,7 @@ Public Class Form1
 
     Sub New()
         InitializeComponent()
+
         DataSet1.DataFile(_Kundendaten.FullName).Register(Me, True).Fill()
     End Sub
 
@@ -27,5 +28,9 @@ Public Class Form1
     Private Sub SpeichernToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SpeichernToolStripMenuItem.Click
         DataSet1.Save(Me)
         My.Computer.Audio.PlaySystemSound(System.Media.SystemSounds.Asterisk)
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

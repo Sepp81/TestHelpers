@@ -6,90 +6,7 @@ HelpersSmallEd
 </name>
 </assembly>
 <members>
-<member name="M:System.StringX.SubstringX(System.String,System.Int32)">
-	<summary> positive value cuts from left, negative cuts from right </summary>
-</member><member name="M:System.StringX.SubstringX(System.String,System.Int32,System.Int32)">
-	<summary> start and end instead of start and length. Adds negative numbers to Subj.Length </summary>
-</member><member name="M:System.StringX.Split(System.String,System.String,System.Int32,System.StringSplitOptions)">
-	<summary> more comfortable than String.Split(separator as String(),count,mode) </summary>
-</member><member name="M:System.StringX.Split(System.String,System.String,System.StringSplitOptions)">
-	<summary> more comfortable to use than String.Split(separator as String(),mode) </summary>
-</member><member name="M:System.StringX.Set(System.String@,System.Object[])">
-	<summary> verkettet alles</summary>
-</member><member name="M:System.StringX.ReplaceBackslashN(System.String)">
-	<summary> interpretiert alle \n am Anfang als newline</summary>
-</member><member name="M:System.StringX.And2(System.String,System.Object[])">
-	<summary> verkettet alles, interpretiert alle \n am Anfang als newline</summary>
-</member><member name="M:System.StringX.And(System.String,System.Object[])">
-	<summary> verkettet alles</summary>
-</member><member name="M:System.StringX.Join(System.Collections.Generic.IEnumerable{System.String},System.String)">
-	<summary> verkettet alles Strings, fügt Separator dazwischen ein </summary>
-</member><member name="M:System.StringX.LastLeftCut(System.String,System.String)">
-	<summary>gibt den String-Abschnitt links des letzten gefundenen Matches zurück - sonst Nothing</summary>
-</member><member name="M:System.StringX.FirstSegment(System.String,System.String)">
-	<summary> gibt den String-Abschnitt links des ersten gefundenen Matches zurück - sonst den String selbst</summary>
-</member><member name="M:System.StringX.LeftCut(System.String,System.String)">
-	<summary> gibt den String-Abschnitt links des ersten gefundenen Matches zurück - sonst Nothing</summary>
-</member><member name="M:System.StringX.LastRightCutOrDefault(System.String,System.String)">
-	<summary>Stringabschnitt ab dem letzten Auftreten von sMatch (ohne sMatch) - sonst den String selbst</summary>
-</member><member name="M:System.StringX.LastRightCut(System.String,System.String)">
-	<summary>Stringabschnitt ab dem letzten Auftreten von sMatch (ohne sMatch) - sonst Nothing</summary>
-</member><member name="M:System.StringX.RightCut(System.String,System.String)">
-	<summary>Stringabschnitt ab dem ersten Auftreten von sMatch (ohne sMatch)</summary>
-</member><member name="M:System.ObjectX.TryBe``1(``0@,System.Object)">
-	<summary>trycast value to desired Type and assigns it.</summary>
-</member><member name="M:System.ObjectX.Be``1(``0@,System.Object)">
-	<summary>cast value to desired Type and assigns it. Causes InvalidCastException on failure</summary>
-</member><member name="M:System.ObjectX.CreateLazy``1(``0@,System.Func{``0})">
-	<summary>create target by creater if null. then return it</summary>
-</member><member name="M:System.ObjectX.Self``1(``0)">
-	<summary>returns the subject itself. Useful in With-Blocks</summary>
-</member><member name="M:System.ObjectX.AssignNotNull``1(``0@,``0)">
-	<summary> returns, wether src is not null. If so, assign src to dst </summary>
-</member><member name="M:System.ObjectX.Assign``1(``0@,``0)">
-	<summary> testet vor einer Zuweisung, ob der neue Wert überhaupt eine Änderung bringt </summary>
-	<remarks>
- nützlich bei Zuweisungen an performance-intensive Properties, 
- oder wenn auf Änderungen reagiert werden muß
- </remarks>
-</member><member name="M:System.IComparableX.ToComparer``1(System.Comparison{``0})">
-	<summary>
- konvertiert eine Comparison in ein IComparer-implementierendes Objekt
- </summary>
-	<remarks>selbst einen Delegaten kann man also erweitern</remarks>
-</member><member name="T:System.IComparableX.BinarySearchComparer`2">
-	<summary>erstellt einen IComparer, dem eine der beiden Seiten als Key fest vorgegeben ist - für optimierte BinarySearches.</summary>
-</member><member name="T:System.IComparableX.ComparisonComparer`1">
-	<summary>IComparer-implementierender Wrapper um eine Comparison </summary>
-</member><member name="T:System.Exception`1">
-	<summary> generische Exception mit genauen Daten über das fehler-werfende Objekt </summary>
-</member><member name="M:System.IO.SystemIOX.WriteTo(System.IO.Stream,System.IO.Stream,System.Int64,System.Int32)">
-	<summary> kopiert von einem Stream in einen anderen </summary>
-	<remarks> 
- Es gibt Streams ohne festgelegtes Ende (zB. NetworkStream).
- In solchem Fall **muß** 'count' angegeben werden.
- </remarks>
-</member><member name="M:System.IO.SystemIOX.SerializeXml(System.IO.FileInfo,System.Object)">
-	<summary>Achtung! FileInfo.OpenWrite ist ungeeignet, denn es erneuert nicht unbedingt die ganze Datei</summary>
-</member><member name="M:System.Data.DataTableX.WireUp``1(System.Data.TypedTableBase{``0},System.Action{``0},System.Action{``0},System.Action{``0})">
-	<summary>eases to implement standard-reactions on Row -init, -change, -delete</summary>
-</member><member name="T:System.Data.DataTableAttach">
-	<summary>stores Stuff to suspend databinding-events</summary>
-</member><member name="T:System.Data.DatasetAdapterBase">
-	<summary>some common basics of DatasetXmlAdapter and DatasetAdapter</summary>
-</member><member name="M:System.Collections.Generic.CollectionX.GetEnumeratorX``1(``0[])">
-	<summary>gibt den **typisierten** Enumerator des Arrays zurück</summary>
-</member><member name="M:System.Collections.Generic.CollectionX.InsertPosition``1(System.Collections.Generic.List{``0},``0)">
-	<summary>returnt die erste Einfügeposition des items in die asc-sortierte Liste </summary>
-</member><member name="M:System.Collections.Generic.CollectionX.InsertPosition``2(System.Collections.Generic.List{``0},``1,System.Func{``0,``1})">
-	<summary>returnt die erste Einfügeposition des Keys in die asc-sortierte Liste </summary>
-</member><member name="M:System.Collections.Generic.CollectionX.BinaryFind``2(System.Collections.Generic.List{``0},``1,System.Func{``0,``1})">
-	<summary> returns the matching Item or Nothing </summary>
-</member><member name="M:System.Collections.Generic.CollectionX.TryGetValue``2(System.Collections.Generic.Dictionary{``0,``1},``0)">
-	<summary> returns the value or Nothing. Be careful with value-types! </summary>
-</member><member name="M:System.Collections.Generic.CollectionX.CloseUp``1(System.Collections.Generic.IList{``0},System.Predicate{``0})">
-	<summary>überschreibt alle matchende items mit den folgenden. returnt den index, ab dem der rest gelöscht werden kann</summary>
-</member><member name="P:My.Resources.Resources.ResourceManager">
+<member name="P:My.Resources.Resources.ResourceManager">
 	<summary>
   Gibt die zwischengespeicherte ResourceManager-Instanz zurück, die von dieser Klasse verwendet wird.
 </summary>
@@ -116,6 +33,8 @@ HelpersSmallEd
 	<summary>
  registers all datasets of this type and all bindingsources of the form, to improve performance and to avoid data-redundance
  </summary>
+</member><member name="M:System.Data.DataTableX.WireUp``1(System.Data.TypedTableBase{``0},System.Action{``0},System.Action{``0},System.Action{``0})">
+	<summary>eases to implement standard-reactions on Row -init, -change, -delete</summary>
 </member><member name="M:System.Windows.Forms.BindingSourceX.EditNew``1(System.Windows.Forms.BindingSource)">
 	<summary> editiert bs.Current im angegebenen Dialog-Form. </summary>
 </member><member name="M:System.Windows.Forms.BindingSourceX.EditCurrent``1(System.Windows.Forms.BindingSource)">
@@ -160,6 +79,87 @@ HelpersSmallEd
 	<summary> stellt die erste matchende DataRow ein </summary>
 </member><member name="M:System.Windows.Forms.BindingSourceX.CheckChanges(System.Data.DataSet)">
 	<summary> for debugging-purposes </summary>
+</member><member name="M:System.IComparableX.ToComparer``1(System.Comparison{``0})">
+	<summary>
+ konvertiert eine Comparison in ein IComparer-implementierendes Objekt
+ </summary>
+	<remarks>selbst einen Delegaten kann man also erweitern</remarks>
+</member><member name="T:System.IComparableX.BinarySearchComparer`2">
+	<summary>erstellt einen IComparer, dem eine der beiden Seiten als Key fest vorgegeben ist - für optimierte BinarySearches.</summary>
+</member><member name="T:System.IComparableX.ComparisonComparer`1">
+	<summary>IComparer-implementierender Wrapper um eine Comparison </summary>
+</member><member name="T:System.Data.DatasetAdapterBase">
+	<summary>some common basics of DatasetXmlAdapter and DatasetAdapter</summary>
+</member><member name="M:System.StringX.SubstringX(System.String,System.Int32)">
+	<summary> positive value cuts from left, negative cuts from right </summary>
+</member><member name="M:System.StringX.SubstringX(System.String,System.Int32,System.Int32)">
+	<summary> start and end instead of start and length. Adds negative numbers to Subj.Length </summary>
+</member><member name="M:System.StringX.Split(System.String,System.String,System.Int32,System.StringSplitOptions)">
+	<summary> more comfortable than String.Split(separator as String(),count,mode) </summary>
+</member><member name="M:System.StringX.Split(System.String,System.String,System.StringSplitOptions)">
+	<summary> more comfortable to use than String.Split(separator as String(),mode) </summary>
+</member><member name="M:System.StringX.Set(System.String@,System.Object[])">
+	<summary> verkettet alles</summary>
+</member><member name="M:System.StringX.ReplaceBackslashN(System.String)">
+	<summary> interpretiert alle \n am Anfang als newline</summary>
+</member><member name="M:System.StringX.And2(System.String,System.Object[])">
+	<summary> verkettet alles, interpretiert alle \n am Anfang als newline</summary>
+</member><member name="M:System.StringX.And(System.String,System.Object[])">
+	<summary> verkettet alles</summary>
+</member><member name="M:System.StringX.Join(System.Collections.Generic.IEnumerable{System.String},System.String)">
+	<summary> verkettet alles Strings, fügt Separator dazwischen ein </summary>
+</member><member name="M:System.StringX.LastLeftCut(System.String,System.String)">
+	<summary>gibt den String-Abschnitt links des letzten gefundenen Matches zurück - sonst Nothing</summary>
+</member><member name="M:System.StringX.FirstSegment(System.String,System.String)">
+	<summary> gibt den String-Abschnitt links des ersten gefundenen Matches zurück - sonst den String selbst</summary>
+</member><member name="M:System.StringX.LeftCut(System.String,System.String)">
+	<summary> gibt den String-Abschnitt links des ersten gefundenen Matches zurück - sonst Nothing</summary>
+</member><member name="M:System.StringX.LastRightCutOrDefault(System.String,System.String)">
+	<summary>Stringabschnitt ab dem letzten Auftreten von sMatch (ohne sMatch) - sonst den String selbst</summary>
+</member><member name="M:System.StringX.LastRightCut(System.String,System.String)">
+	<summary>Stringabschnitt ab dem letzten Auftreten von sMatch (ohne sMatch) - sonst Nothing</summary>
+</member><member name="M:System.StringX.RightCut(System.String,System.String)">
+	<summary>Stringabschnitt ab dem ersten Auftreten von sMatch (ohne sMatch)</summary>
+</member><member name="M:System.IO.SystemIOX.WriteTo(System.IO.Stream,System.IO.Stream,System.Int64,System.Int32)">
+	<summary> kopiert von einem Stream in einen anderen </summary>
+	<remarks> 
+ Es gibt Streams ohne festgelegtes Ende (zB. NetworkStream).
+ In solchem Fall **muß** 'count' angegeben werden.
+ </remarks>
+</member><member name="M:System.IO.SystemIOX.SerializeXml(System.IO.FileInfo,System.Object)">
+	<summary>Achtung! FileInfo.OpenWrite ist ungeeignet, denn es erneuert nicht unbedingt die ganze Datei</summary>
+</member><member name="T:System.Exception`1">
+	<summary> generische Exception mit genauen Daten über das fehler-werfende Objekt </summary>
+</member><member name="M:System.ObjectX.TryBe``1(``0@,System.Object)">
+	<summary>trycast value to desired Type and assigns it.</summary>
+</member><member name="M:System.ObjectX.Be``1(``0@,System.Object)">
+	<summary>cast value to desired Type and assigns it. Causes InvalidCastException on failure</summary>
+</member><member name="M:System.ObjectX.CreateLazy``1(``0@,System.Func{``0})">
+	<summary>create target by creater if null. then return it</summary>
+</member><member name="M:System.ObjectX.Self``1(``0)">
+	<summary>returns the subject itself. Useful in With-Blocks</summary>
+</member><member name="M:System.ObjectX.AssignNotNull``1(``0@,``0)">
+	<summary> returns, wether src is not null. If so, assign src to dst </summary>
+</member><member name="M:System.ObjectX.Assign``1(``0@,``0)">
+	<summary> testet vor einer Zuweisung, ob der neue Wert überhaupt eine Änderung bringt </summary>
+	<remarks>
+ nützlich bei Zuweisungen an performance-intensive Properties, 
+ oder wenn auf Änderungen reagiert werden muß
+ </remarks>
+</member><member name="M:System.Collections.Generic.CollectionX.GetEnumeratorX``1(``0[])">
+	<summary>gibt den **typisierten** Enumerator des Arrays zurück</summary>
+</member><member name="M:System.Collections.Generic.CollectionX.InsertPosition``1(System.Collections.Generic.List{``0},``0)">
+	<summary>returnt die erste Einfügeposition des items in die asc-sortierte Liste </summary>
+</member><member name="M:System.Collections.Generic.CollectionX.InsertPosition``2(System.Collections.Generic.List{``0},``1,System.Func{``0,``1})">
+	<summary>returnt die erste Einfügeposition des Keys in die asc-sortierte Liste </summary>
+</member><member name="M:System.Collections.Generic.CollectionX.BinaryFind``2(System.Collections.Generic.List{``0},``1,System.Func{``0,``1})">
+	<summary> returns the matching Item or Nothing </summary>
+</member><member name="M:System.Collections.Generic.CollectionX.TryGetValue``2(System.Collections.Generic.Dictionary{``0,``1},``0)">
+	<summary> returns the value or Nothing. Be careful with value-types! </summary>
+</member><member name="M:System.Collections.Generic.CollectionX.CloseUp``1(System.Collections.Generic.IList{``0},System.Predicate{``0})">
+	<summary>überschreibt alle matchende items mit den folgenden. returnt den index, ab dem der rest gelöscht werden kann</summary>
+</member><member name="T:System.Data.DataTableAttach">
+	<summary>stores Stuff to suspend databinding-events</summary>
 </member>
 </members>
 </doc>

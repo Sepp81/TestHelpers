@@ -15,4 +15,8 @@ Public Class Form2
     Private Sub SchliessenToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SchliessenToolStripMenuItem.Click
         Me.Close()
     End Sub
+
+    Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
